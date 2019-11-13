@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCD89144-330B-4643-A167-F46DC53BC3DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>界面美化</RootNamespace>
+    <AssemblyName>界面美化</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=10.5.0.3, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=10.5.0.3, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=10.5.0.3, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DotNetBar\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form7_user.Designer.cs">
+      <DependentUpon>Form7_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_customer - 复制.Designer - 复制.cs">
+      <DependentUpon>Form6_goods.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_customer - 复制.Designer.cs">
+      <DependentUpon>Form5_supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_addgoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_addgoods.Designer.cs">
+      <DependentUpon>Form_addgoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8_systemlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_systemlog.Designer.cs">
+      <DependentUpon>Form8_systemlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_userchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_userchange.Designer.cs">
+      <DependentUpon>Form_userchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_adduser.Designer.cs">
+      <DependentUpon>Form_adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_im_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_im_report.Designer.cs">
+      <DependentUpon>Form_im_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ex_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ex_report.Designer.cs">
+      <DependentUpon>Form_ex_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_usertype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_usertype.Designer.cs">
+      <DependentUpon>Form_usertype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_im_auditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_im_auditing.Designer.cs">
+      <DependentUpon>Form_im_auditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ex_auditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ex_auditing.Designer.cs">
+      <DependentUpon>Form_ex_auditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_goodsstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_goodsstore.Designer.cs">
+      <DependentUpon>Form_goodsstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_goodsstore_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_goodsstore_change.Designer.cs">
+      <DependentUpon>Form_goodsstore_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_goodstype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_goodstype.Designer.cs">
+      <DependentUpon>Form_goodstype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_suppliertype .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_suppliertype .Designer.cs">
+      <DependentUpon>Form_suppliertype .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_menu.Designer.cs">
+      <DependentUpon>Form_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_export.Designer.cs">
+      <DependentUpon>Form2_export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_import.Designer.cs">
+      <DependentUpon>Form3_import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_customer.Designer.cs">
+      <DependentUpon>Form4_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_change.Designer.cs">
+      <DependentUpon>Form_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_add.Designer.cs">
+      <DependentUpon>Form_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_customertype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_customertype.Designer.cs">
+      <DependentUpon>Form_customertype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_password.Designer.cs">
+      <DependentUpon>Form_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form7_user.resx">
+      <DependentUpon>Form7_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_goods.resx">
+      <DependentUpon>Form6_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_supplier.resx">
+      <DependentUpon>Form5_supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_addgoods.resx">
+      <DependentUpon>Form_addgoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_systemlog.resx">
+      <DependentUpon>Form8_systemlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_userchange.resx">
+      <DependentUpon>Form_userchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_adduser.resx">
+      <DependentUpon>Form_adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_im_report.resx">
+      <DependentUpon>Form_im_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ex_report.resx">
+      <DependentUpon>Form_ex_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_usertype.resx">
+      <DependentUpon>Form_usertype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_im_auditing.resx">
+      <DependentUpon>Form_im_auditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ex_auditing.resx">
+      <DependentUpon>Form_ex_auditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_goodsstore.resx">
+      <DependentUpon>Form_goodsstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_goodsstore_change.resx">
+      <DependentUpon>Form_goodsstore_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_goodstype.resx">
+      <DependentUpon>Form_goodstype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_suppliertype .resx">
+      <DependentUpon>Form_suppliertype .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_menu.resx">
+      <DependentUpon>Form_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_export.resx">
+      <DependentUpon>Form2_export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_import.resx">
+      <DependentUpon>Form3_import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4_customer.resx">
+      <DependentUpon>Form4_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_change.resx">
+      <DependentUpon>Form_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_add.resx">
+      <DependentUpon>Form_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_customertype.resx">
+      <DependentUpon>Form_customertype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_password.resx">
+      <DependentUpon>Form_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6049 - Team Members.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
